@@ -21,6 +21,9 @@ public class Main {
         cat.introduceYourself();
         dog.introduceYourself();
 
+        Integer humanAge = dog.getHumanAge();
+        System.out.println("If i'll be human, i'll be " + humanAge + " years old");
+
         cat.doYouLike("mouse");
         dog.doYouLike("mouse");
 
@@ -35,8 +38,15 @@ public class Main {
         me.lastName = "Barsow";
 
         me.pet = dog;
+        System.out.println("I have a " + me.pet.species);
+        System.out.println("I call it: " + me.pet.name);
+        me.pet = dog;
         me.pet.feed();
         me.pet.takeForAWalk();
+
+        me.getSalary();
+        me.setSalary(-1.0);
+        me.setSalary(3500.0);
 
     }
 }

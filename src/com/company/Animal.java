@@ -35,7 +35,8 @@ public class Animal {
             System.out.println("no you idiot ");
         }
     }
-        void feed() {
+
+    void feed() {
         this.weight += 1;
         System.out.println("Pet is gaining weight");
         System.out.println("Weight of pet " + this.weight);
@@ -53,6 +54,14 @@ public class Animal {
 
     }
 
-
-
+    Integer getHumanAge() {
+        if (this.species == "canis") {
+            return this.age * 7;
+        } else if (this.species == "felis") {
+            return this.age * 10;
+        } else {
+            return this.age;
+        }
     }
+}
+
