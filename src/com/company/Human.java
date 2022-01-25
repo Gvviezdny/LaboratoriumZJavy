@@ -8,4 +8,5 @@ public class Human {
         Integer age;
         Double salary;
         Animal pet;
+        Car car;
 }
