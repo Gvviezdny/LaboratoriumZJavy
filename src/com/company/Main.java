@@ -1,6 +1,8 @@
 package com.company;
 
 public class Main {
+    public Main() {
+    }
 
     public static void main(String[] args) {
 
@@ -33,6 +35,13 @@ public class Main {
         zastava.millage = 2137.0;
         zastava.engineSize = 1.4;
 
+        Car trabant = new Car();
+        trabant.producer = "NRD";
+        trabant.model ="trabant";
+        zastava.millage = 1337.0;
+        zastava.engineSize = 0.8;
+
+
         Human me = new Human();
         me.firstName = "Marcin";
         me.lastName = "Barsow";
@@ -45,8 +54,19 @@ public class Main {
         me.pet.takeForAWalk();
 
         me.getSalary();
-        me.setSalary(-1.0);
+        me.setSalary(-1.00);
         me.setSalary(3500.0);
+        me.setCar(zastava);
+
+        if (me.getCar() != null) {
+            System.out.println(me.getCar().model);
+        }
+
+        try {
+            System.out.println(me.getCar().model);
+        } catch (Exception var12) {
+            System.out.println("You don't have a car");
+        }
 
     }
 }
