@@ -24,7 +24,18 @@ public class Animal {
         }
     }
 
-    void feed() {
+    void introduceYourself() {
+        System.out.println("I'm " + this.name);
+    }
+
+    void doYouLike(String foodType) {
+        if (this.species == "felis" && foodType == "mouse") {
+            System.out.println("yes, I like " + foodType);
+        } else {
+            System.out.println("no you idiot ");
+        }
+    }
+        void feed() {
         this.weight += 1;
         System.out.println("Pet is gaining weight");
         System.out.println("Weight of pet " + this.weight);
@@ -41,5 +52,7 @@ public class Animal {
         return this.weight;
 
     }
+
+
 
     }
