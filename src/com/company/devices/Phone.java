@@ -17,8 +17,8 @@ public class Phone extends Device implements Saleable {
     public String os;
 
 
-    public Phone(String producer, String model, Integer yearOfProduction) {
-        super(producer, model, yearOfProduction);
+    public Phone() {
+        super("Sony", "Xperia", 2021);
 
     }
         @Override

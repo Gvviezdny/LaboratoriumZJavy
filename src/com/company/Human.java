@@ -95,4 +95,12 @@ public class Human extends Animal {
 
 
         }
+
+        public void setPhone(Phone phone) {
+                this.phone = phone;
+        }
+
+        public Phone getPhone() {
+                return phone;
+        }
 }

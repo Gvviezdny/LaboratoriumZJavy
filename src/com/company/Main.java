@@ -48,7 +48,20 @@ public class Main {
         Car Trabant = new Electric();
         Car Porshe = new Disel();
         Car Pontiac = new Disel();
+        Car Ferrari = new Disel();
 
+        Phone Xiaomi = new Phone(); // wiadomo Xiaomi lepsze
+        Phone Iphone = new Phone();
+        Phone Sony = new Phone();
+
+        Xiaomi.screenSize = 7.0;
+        Xiaomi.os = "Android 9.0";
+
+        Iphone.screenSize = 5.0;
+        Iphone.os = "IOS";
+
+        Sony.screenSize = 6.5;
+        Sony.os = "Android 7.0";
 
        // Zastava.producer = "Zastava";
        // Zastava.model = "1100p";
@@ -67,35 +80,47 @@ public class Main {
         me.lastName = "Barsow";
         me.setCar(Trabant);
         me.setSalary(8000.0);
-
-
-
         me.getSalary();
         me.setSalary(-1.00);
         me.setSalary(3500.0);
         me.setCar(Zastava);
-
         me.pet = dog;
+        me.phone = Sony;
+
         System.out.println("I have a " + me.pet.species);
         System.out.println("I call it: " + me.pet.name);
 
-        me.pet = dog;
         me.pet.feed();
         me.pet.takeForAWalk();
 
         Human Tadeusz = new Human();
         Tadeusz.cash = 5000.0;
         Human Henryk = new Human();
+        Human Wojtek = new Human();
+        Wojtek.cash = 40000.0;
+        Wojtek.setCar(Ferrari);
         Henryk.cash = 2000.0;
         Henryk.setCar(Porshe);
+        Henryk.setPhone(Xiaomi);
         Tadeusz.setCar(Trabant);
         Tadeusz.setCar(Pontiac);
+        Tadeusz.setPhone(Iphone);
+        Henryk.setPhone(Xiaomi);
+
 
         Pontiac.sale(me, Tadeusz, 2137.0);
+        Trabant.sale(me, Tadeusz, 1000.0);
 
+        Pontiac.engineSize = 6.0;
 
+        Xiaomi.screenSize = 7.0;
+        Xiaomi.os = "Android 9.0";
 
+        Iphone.screenSize = 5.5;
+        Iphone.os = "IOS";
 
+        Iphone.sale(me, Tadeusz, 700.0);
+        Xiaomi.sale(me, Henryk, 900.0);
 
 
 
