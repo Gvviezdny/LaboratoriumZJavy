@@ -102,6 +102,7 @@ public class Animal implements Saleable, Feedable {
 
 
 
+
     public Integer getHumanAge() {
         if (this.species == "canis") {
             return this.age * 7;

@@ -2,7 +2,7 @@ package com.company.devices;
 
 import java.util.Objects;
 
-public abstract class Device {
+public class Device {
 
 
     final public String producer;
@@ -39,5 +39,7 @@ public abstract class Device {
     }
 
 
-    public abstract void turnOn();
+    public void turnOn() {
+
+    }
 }

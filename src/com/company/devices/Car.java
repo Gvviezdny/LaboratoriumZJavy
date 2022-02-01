@@ -17,7 +17,7 @@ public abstract class Car extends Device implements Saleable {
 
 
     public Car() {
-        super(null, null, null);
+        super("Pontiac", "TransAM", 1979);
     }
     public void turnOn() {
         System.out.println("Odpalanie fury");
